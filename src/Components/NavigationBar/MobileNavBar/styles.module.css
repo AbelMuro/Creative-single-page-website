@@ -1,0 +1,93 @@
+.navbar{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+.navbar_logo{
+    width: 161px;
+    height: 30px;
+}
+
+.navbar_button{
+    width: 34px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.navbar_menu_open{
+    width: 24px;
+    height: 18px;
+}
+
+.navbar_menu_close{
+    width: 20px;
+    height: 20px;
+}
+
+.menu{
+    width: 252px;
+    height: 292px;
+    background-color: #191921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 110px;
+    right: 26px;
+    transition: none;
+}
+
+
+.menu_links{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu_link{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    cursor: pointer;
+}
+
+.menu_link:hover{
+    font-weight: 700;
+}
+
+.menu_button{
+    width: 199px;
+    height: 64px;
+    margin: 0px;
+    background-color: #F94F4F;
+    border: none;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.menu_button:hover{
+    background-color: #fb7272;
+}

@@ -1,0 +1,87 @@
+.navbar{
+    width: 100%;
+    height: 178px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_logoContainer{
+    width: 570px;
+}
+
+.navbar_logo{
+    width: 161px;
+    height: 30px;
+}
+
+.navbar_links{
+    width: 705px;
+    height: 178px;    
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 0px;
+    background-color: #F94F4F;
+    list-style-type: none;
+    padding: 0px 40px 0px 69px;
+}
+
+.link{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    cursor: pointer;
+}
+
+.link:hover{
+    font-weight: 700;
+}
+
+.schedulebutton{
+    cursor: pointer;
+    width: 199px;
+    height: 64px;
+    background-color: #191921;
+    border: none;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 0px;
+    margin-left: 15px;
+}
+
+.schedulebutton:hover{
+    background-color:#434356;
+}
+
+@media(max-width: 1300px){
+    .navbar{
+       padding-left: 40px;
+    }
+}
+
+@media(max-width: 840px){
+    .navbar_links{
+        width: 438px;
+        gap: 20px;
+        padding-left: 33px;
+    }
+
+    .link{
+        font-size: 0.9375rem;
+    }
+
+    .schedulebutton{
+        width: 147px;
+        height: 64px;
+    }
+}

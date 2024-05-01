@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'commissioner';
+    src: url('/public/fonts/Commissioner-VariableFont_FLAR\,VOLM\,slnt\,wght.ttf');
+}
+
+:root{
+    --font: 'commissioner'
+}
+
+body{
+    min-height: 100vh;
+    margin: 0px;
+}
+
+
+*{
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
