@@ -1,0 +1,170 @@
+.section{
+    width: 100%;
+    height: 984px;
+    display: flex;
+    background-color: #191921;
+    margin: auto;
+    position: relative;
+}
+
+.wave{
+    width: 135px;
+    height: 61px;
+    position: absolute;
+    left: -67px;
+    top: 234px;
+}
+
+.section_image{
+    width: 735px;
+    object-fit: cover;
+    content: url('./images/image-strategic.jpg')
+}
+
+.section_blackbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section_content{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;    
+}
+
+.section_content > h1{
+    color: #FFF;
+    font-family: var(--font);
+    font-size:  3.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    margin: 0px 0px 43px 0px;
+}
+
+.section_content > h1 > span{
+    color: #F94F4F;
+}
+
+.section_content > p{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    margin: 0px 0px 48px 0px;
+}
+
+.section_content > a{
+    width: 124px;
+    color: #F94F4F;
+    font-family: var(--font);
+    font-size: 1.125rem;;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    cursor: pointer;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #F94F4F;
+}
+
+.section_content > a:hover{
+    color: #FF9393;
+    border-bottom: 1px solid #FF9393;
+}
+
+@media(max-width: 1375px){
+    .section_image{
+        width: 50%;
+    }
+
+    .section_content{
+        justify-self: center;
+    }
+}
+
+@media(max-width: 1150px){
+    .section_content{
+        width: 70%;
+    }
+}
+
+@media(max-width: 840px){
+    .section{
+        height: 658px;
+    }
+
+    .wave{
+        width: 63px;
+        height: 29px;
+        top: 145px;
+        left: -31px;
+    }
+
+    .section_image{
+        content: url('./images/image-strategic-tablet.jpg')
+    }
+
+    .section_content{
+        margin-top: 120px;
+    }
+
+    .section_content > h1{
+        width: 150px;
+        font-size: 2rem;
+        margin-bottom: 32px;
+        line-height: 40px;
+    }
+
+    .section_content > p{
+        font-size: 0.9375rem;
+        margin-bottom: 32px;
+        line-height: 25px;
+    }
+
+    .section_content > a {
+        width: 103px;
+        font-size: 0.9375rem;
+        padding-bottom: 9px;
+    }
+}
+
+@media(max-width: 660px){
+    .section{
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+        height: auto;
+        padding-bottom: 72px;
+    }
+
+    .wave{
+        top: -88px;
+        left: 24px;
+    }
+
+    .section_image{
+        width: 100%;
+        content: url('./images/image-strategic-mobile.jpg')
+    }
+
+    .section_content{
+        width: 327px;        
+        margin-top: 0px;
+        padding-right: 0px;
+        
+    }
+
+    .section_content > h1{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .section_content > p{
+        margin-bottom: 40px;
+    }
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import NavigationBar from './Components/NavigationBar';
 import Header from './Components/Header';
+import StrategicSection from './Components/StrategicSection';
+import BulletPointSection from './Components/BulletPointSection';
 import './styles.css';
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
         <>
             <NavigationBar/>
             <Header/>
+            <StrategicSection/>
+            <BulletPointSection/>
         </>
     )
 }
