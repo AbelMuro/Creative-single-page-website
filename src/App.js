@@ -3,6 +3,7 @@ import NavigationBar from './Components/NavigationBar';
 import Header from './Components/Header';
 import StrategicSection from './Components/StrategicSection';
 import BulletPointSection from './Components/BulletPointSection';
+import ImageCarousel from './Components/ImageCarousel';
 import './styles.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Header/>
             <StrategicSection/>
             <BulletPointSection/>
+            <ImageCarousel/>
         </>
     )
 }

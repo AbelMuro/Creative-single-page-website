@@ -1,0 +1,223 @@
+.carousel{
+    width: 100%;
+    height: 728px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+
+.carousel_blackbox{
+    width: 735px;
+    height: 528px;
+    background-color: #191921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 51px;
+    position: relative;
+    z-index: var(--close);
+}
+
+.wave_icon{
+    width: 134px;
+    height: 60px;
+    position: absolute;
+    top: 186px;
+    right: -67px;
+}
+
+.carousel_content{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 51px;
+}
+
+.carousel_content > h1{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px; /* 114.286% */
+    margin: 0px;
+}
+
+.carousel_buttons{
+    display: flex;
+    gap: 16px;
+}
+
+.carousel_buttons > button{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel_next_icon{
+    width: 40px;
+    height: 40px;
+    background-color: #F94F4F;
+    mask-image: url('./icons/icon-arrow-next.svg');
+    -webkit-mask-image: url('./icons/icon-arrow-next.svg');
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 40px 40px;
+    -webkit-mask-size: 40px 40px;
+}
+
+.carousel_next_icon:hover{
+    background-color: #FF9393;
+}
+
+.carousel_previous_icon{
+    width: 40px;
+    height: 40px;
+    background-color: #F94F4F;
+    mask-image: url('./icons/icon-arrow-previous.svg');
+    -webkit-mask-image: url('./icons/icon-arrow-previous.svg');
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 40px 40px;
+    -webkit-mask-size: 40px 40px;
+}
+
+.carousel_previous_icon:hover{
+    background-color: #FF9393;
+}
+
+.carousel_images{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 895px;
+    height: 728px;
+    display: flex;
+    align-items: end;
+}
+
+.carousel_info{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.75) 100%);
+    display: grid;
+    grid-template-columns: 65%;
+    justify-content: center;
+    align-content: center;
+    justify-items: end;
+}
+
+.carousel_info > h2{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 160% */
+    margin: 0px;
+}
+
+.carousel_info > p{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    margin: 0px;
+}
+
+.carousel_images > img{
+    width: 100%;
+    object-fit: contain;
+}
+
+@media(max-width: 1000px){
+    .carousel_images{
+        width: 80%;
+    }
+}
+
+@media(max-width: 840px){
+    .carousel_blackbox{
+        width: 390px;
+        height: 352px;
+    }
+
+    .carousel_content{
+        width: 281px;
+        gap: 32px;
+    }
+
+    .carousel_content > h1{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .wave_icon{
+        width: 62.533px;
+        height: 28.525px;
+        top: 126px;
+        right: -31.53px;
+    }
+
+    .carousel_images{
+        width: 60%;
+    }
+
+    .carousel_info{
+        grid-template-columns: 80%;
+        height: 130px;
+    }
+
+    .carousel_info > h2, .carousel_info > p{
+        font-size: 0.9375rem;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 660px){
+    .carousel{
+        height: 676px;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .carousel_info{
+        grid-template-columns: 90%;
+        height: 111px;
+    }
+
+    .carousel_blackbox{
+        width: 100%;
+        height: 272px;
+    }
+
+    .carousel_content{
+        gap: 24px;
+    }
+
+    .wave_icon{
+        display: none;
+    }
+
+    .carousel_images{
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 404px;
+    }
+}

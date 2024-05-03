@@ -69,7 +69,7 @@
     line-height: normal;
     cursor: pointer;
     padding-bottom: 8px;
-    border-bottom: 1px solid #F94F4F;
+    border-bottom: 2px solid #F94F4F;
 }
 
 .section_content > a:hover{
@@ -81,15 +81,16 @@
     .section_image{
         width: 50%;
     }
+    .section_blackbox{
+        width: 50%;
+    }
+
+    .section_content{
+        width: 70%;
+    }    
 
     .section_content{
         justify-self: center;
-    }
-}
-
-@media(max-width: 1150px){
-    .section_content{
-        width: 70%;
     }
 }
 
@@ -140,6 +141,10 @@
         gap: 72px;
         height: auto;
         padding-bottom: 72px;
+    }
+
+    .section_blackbox{
+        width: 100%;
     }
 
     .wave{
