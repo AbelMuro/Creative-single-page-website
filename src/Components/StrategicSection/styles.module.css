@@ -74,7 +74,7 @@
 
 .section_content > a:hover{
     color: #FF9393;
-    border-bottom: 1px solid #FF9393;
+    border-bottom: 2px solid #FF9393;
 }
 
 @media(max-width: 1375px){

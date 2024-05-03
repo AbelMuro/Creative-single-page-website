@@ -151,6 +151,10 @@
 }
 
 @media(max-width: 840px){
+    .carousel{
+        height: 472px;
+    }
+
     .carousel_blackbox{
         width: 390px;
         height: 352px;
@@ -175,6 +179,7 @@
 
     .carousel_images{
         width: 60%;
+        height: 472px;
     }
 
     .carousel_info{

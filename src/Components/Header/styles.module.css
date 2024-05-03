@@ -51,6 +51,10 @@
     cursor: pointer;
 }
 
+.header_content > button:hover{
+    background-color: #FF9393;
+}
+
 @media(max-width: 840px){
     .header{
         background-image: url('./images/image-hero-tablet.jpg');

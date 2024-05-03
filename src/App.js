@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import StrategicSection from './Components/StrategicSection';
 import BulletPointSection from './Components/BulletPointSection';
 import ImageCarousel from './Components/ImageCarousel';
+import Footer from './Components/Footer';
 import './styles.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <StrategicSection/>
             <BulletPointSection/>
             <ImageCarousel/>
+            <Footer/>
         </>
     )
 }

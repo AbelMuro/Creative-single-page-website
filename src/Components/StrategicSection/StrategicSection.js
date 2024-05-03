@@ -1,6 +1,6 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import * as styles from './styles.module.css';
-import icons from './icons';
+import icons from '/public/icons';
 
 function StrategicSection() {
 
